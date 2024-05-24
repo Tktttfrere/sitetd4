@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Monde des Truites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .species {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .species img {
+            float: left;
+            margin-right: 20px;
+            max-width: 200px;
+        }
+        .species h2 {
+            margin-top: 0;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Monde des Truites</h1>
+    </header>
+    <nav>
+        <a href="#fario">Truite fario</a>
+        <a href="#arc-en-ciel">Truite arc-en-ciel</a>
+        <a href="#de-mer">Truite de mer</a>
+    </nav>
+    <div class="container">
+        <div id="fario" class="species">
+            <img src="truite_fario.jpg" alt="Truite fario">
+            <h2>Truite fario</h2>
+            <p><strong>Lieu de vie :</strong> Rivières et torrents d'Europe.</p>
+            <p><strong>Particularités :</strong> La truite fario est caractérisée par sa robe brune avec des points rouges et noirs. Elle est très prisée des pêcheurs pour sa combativité.</p>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="arc-en-ciel" class="species">
+            <img src="truite_arc_en_ciel.jpg" alt="Truite arc-en-ciel">
+            <h2>Truite arc-en-ciel</h2>
+            <p><strong>Lieu de vie :</strong> Originaire d'Amérique du Nord, elle est maintenant présente dans le monde entier.</p>
+            <p><strong>Particularités :</strong> Cette espèce est reconnaissable à sa bande colorée le long de son flanc. Elle est souvent utilisée pour l'élevage en pisciculture.</p>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="de-mer" class="species">
+            <img src="truite_de_mer.jpg" alt="Truite de mer">
+            <h2>Truite de mer</h2>
+            <p><strong>Lieu de vie :</strong> Zones côtières et estuaires de l'Atlantique Nord.</p>
+            <p><strong>Particularités :</strong> La truite de mer migre entre les eaux douces et salées. Elle est appréciée pour sa chair délicate et sa taille impressionnante par rapport aux autres truites.</p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
 
