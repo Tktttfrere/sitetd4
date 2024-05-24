@@ -3,72 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur's Cat Breeds</title>
+    <title>Races de chats</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 2em;
-        }
-        .cat-breed {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 1em;
-            width: 300px;
-            text-align: center;
+        .container {
+            width: 80%;
+            margin: auto;
             overflow: hidden;
         }
-        .cat-breed img {
-            width: 100%;
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .cat {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .cat img {
+            float: left;
+            margin-right: 20px;
+            width: 200px;
             height: auto;
+            border-radius: 10px;
         }
-        .cat-breed h2 {
-            font-size: 1.5em;
-            margin: 0.5em 0;
-        }
-        .cat-breed p {
-            padding: 0 1em 1em;
-            font-size: 1em;
-            color: #555;
+        .cat:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Arthur's Cat Breeds</h1>
+        <h1>Présentation des différentes races de chats</h1>
     </header>
-    <main>
-        <div class="cat-breed">
-            <img src="images/siamese.jpg" alt="Siamese Cat">
+    <div class="container">
+        <div class="cat">
+            <img src="https://images.unsplash.com/photo-1612196268952-8e6e42f3b5b7" alt="Siamois">
             <h2>Siamois</h2>
-            <p>Le Siamois est une race de chat originaire de Thaïlande, connue pour ses yeux bleus perçants et son pelage court et soyeux.</p>
+            <p>Le chat siamois est une race élégante avec un corps mince et une tête en forme de coin. Ils sont très sociaux et aiment être au centre de l'attention. Les siamois sont connus pour leurs yeux bleus vifs et leur robe pointillée.</p>
         </div>
-        <div class="cat-breed">
-            <img src="images/persian.jpg" alt="Persian Cat">
+        <div class="cat">
+            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Persan">
             <h2>Persan</h2>
-            <p>Le Persan est une race de chat avec un pelage long et dense, et une personnalité calme et affectueuse.</p>
+            <p>Le chat persan est célèbre pour son visage plat et son pelage long et luxuriant. Ce sont des chats calmes et doux qui aiment se détendre dans des environnements paisibles. Les persans nécessitent un toilettage régulier pour maintenir leur fourrure en bon état.</p>
         </div>
-        <div class="cat-breed">
-            <img src="images/maine_coon.jpg" alt="Maine Coon Cat">
+        <div class="cat">
+            <img src="https://images.unsplash.com/photo-1592194996308-7b4603f8f0ae" alt="Maine Coon">
             <h2>Maine Coon</h2>
-            <p>Le Maine Coon est l'une des plus grandes races de chats domestiques, célèbre pour sa taille imposante et son pelage épais.</p>
+            <p>Le Maine Coon est l'une des plus grandes races de chats domestiques. Ils ont un pelage épais et résistant à l'eau, des oreilles touffues et une queue impressionnante. Ce sont des chats amicaux et intelligents, parfaits pour les familles.</p>
         </div>
-        <!-- Ajoutez d'autres races de chats ici -->
-    </main>
+        <div class="cat">
+            <img src="https://images.unsplash.com/photo-1615196087113-49f1f614d470" alt="Bengal">
+            <h2>Bengal</h2>
+            <p>Le chat Bengal est reconnu pour son apparence sauvage, rappelant celle du léopard. Ils sont très actifs et aiment jouer. Leur pelage est unique avec des motifs de rosettes, de marbrures ou de taches qui leur donnent une allure exotique.</p>
+        </div>
+        <div class="cat">
+            <img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg" alt="Sphynx">
+            <h2>Sphynx</h2>
+            <p>Le Sphynx est une race sans poils connue pour sa peau douce et ridée et ses grandes oreilles. Ils sont extrêmement affectueux et aiment être proches de leurs propriétaires. Bien qu'ils n'aient pas de fourrure, ils nécessitent des soins réguliers pour leur peau.</p>
+        </div>
+        <div class="cat">
+            <img src="https://images.pexels.com/photos/1264078/pexels-photo-1264078.jpeg" alt="British Shorthair">
+            <h2>British Shorthair</h2>
+            <p>Le British Shorthair est une race robuste avec une tête ronde et un pelage dense. Ils sont calmes et faciles à vivre, ce qui en fait de merveilleux animaux de compagnie pour les familles. Leur pelage peut être de différentes couleurs, mais le bleu (gris) est le plus populaire.</p>
+        </div>
+    </div>
+    <footer>
+        <p style="text-align: center;">Les chats aiment les poissons, en particulier les truites.</p>
+    </footer>
 </body>
 </html>
