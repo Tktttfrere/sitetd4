@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Universities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Les 5 Meilleures Universités du Monde</h1>
+    </header>
+    <main>
+        <section class="university" id="harvard">
+            <img src="images/harvard.jpg" alt="Harvard University">
+            <h2>Harvard University</h2>
+            <p>Située à Cambridge, Massachusetts, Harvard est la plus ancienne université des États-Unis.</p>
+        </section>
+        <section class="university" id="stanford">
+            <img src="images/stanford.jpg" alt="Stanford University">
+            <h2>Stanford University</h2>
+            <p>Stanford est connue pour son excellence académique et ses liens avec la Silicon Valley.</p>
+        </section>
+        <section class="university" id="mit">
+            <img src="images/mit.jpg" alt="MIT">
+            <h2>Massachusetts Institute of Technology (MIT)</h2>
+            <p>Le MIT est une institution de recherche et d'enseignement de premier plan à l'échelle mondiale.</p>
+        </section>
+        <section class="university" id="caltech">
+            <img src="images/caltech.jpg" alt="Caltech">
+            <h2>California Institute of Technology (Caltech)</h2>
+            <p>Caltech est célèbre pour ses solides programmes de science et d'ingénierie.</p>
+        </section>
+        <section class="university" id="oxford">
+            <img src="images/oxford.jpg" alt="University of Oxford">
+            <h2>University of Oxford</h2>
+            <p>Oxford est la plus ancienne université du monde anglophone, située au Royaume-Uni.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.university {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.university img {
+    width: 100%;
+    height: auto;
+}
+
+.university h2 {
+    background-color: #6a0dad;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.university p {
+    padding: 20px;
+}
+
+.university:hover {
+    transform: scale(1.05);
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.university');
+    
+    sections.forEach(section => {
+        section.addEventListener('mouseover', function() {
+            section.style.borderColor = '#dda0dd';
+        });
+        
+        section.addEventListener('mouseout', function() {
+            section.style.borderColor = 'white';
+        });
+    });
+});
 
