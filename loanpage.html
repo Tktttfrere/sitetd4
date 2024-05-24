@@ -14,12 +14,14 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav {
             background-color: #444;
             overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav a {
             float: left;
@@ -28,6 +30,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
             background-color: #ddd;
@@ -41,17 +44,47 @@
             margin-bottom: 20px;
             padding: 10px;
             background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .species:hover {
+            transform: scale(1.05);
         }
         .species img {
             float: left;
             margin-right: 20px;
             max-width: 200px;
+            height: auto;
+            border-radius: 10px;
         }
         .species h2 {
             margin-top: 0;
         }
         .clear {
             clear: both;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            .species img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px;
+            }
+            nav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -99,5 +132,8 @@
             <div class="clear"></div>
         </div>
     </div>
+    <footer>
+        &copy; 2024 Le Monde des Truites. Tous droits réservés.
+    </footer>
 </body>
 </html>
